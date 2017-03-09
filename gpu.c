@@ -8,7 +8,7 @@
 #include <CL/cl.h>
 #endif
 
-#define MAX_SOURCE_SIZE (0x100000)
+#define MAX_SOURCE_SIZE (0xFFFFFFFFFFF)
 
 int main() {
   cl_device_id device_id = NULL;
@@ -25,7 +25,7 @@ int main() {
   cl_ulong val[1];
 
   FILE *fp;
-  char fileName[] = "./sum.cl";
+  char fileName[] = "./simple.cl";
   char *source_str;
   size_t source_size;
 
@@ -69,7 +69,7 @@ int main() {
 
   printf("Result: %llu\n", val[0]);
   printf("Runtime: %lfms\n", runtime);
-  
+
   free(source_str);
 
   return 0;

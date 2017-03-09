@@ -6,7 +6,7 @@ typedef unsigned long long fuckin_large;
 int main() {
   clock_t begin = clock();
   fuckin_large val = 0;
-  for (fuckin_large j = 0; j < 100000000; j++) {
+  for (fuckin_large j = 0; j < 1000000000; j++) {
     val += j;
   }
   printf("Result: %llu\n", val);

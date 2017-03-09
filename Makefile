@@ -1,9 +1,9 @@
 CC=gcc
 
 SRC_GPU=gpu.c
-SRC_CPU=cpu.c
+#SRC_CPU=cpu.c
 OUT_GPU=gpu
-OUT_CPU=cpu
+#OUT_CPU=cpu
 
 all: clean gpu cpu
 
